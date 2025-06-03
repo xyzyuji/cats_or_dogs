@@ -56,7 +56,7 @@ model = load_model("model/model.h5")
 uploaded_file = st.file_uploader("画像をアップロードしてください", type=["jpg", "jpeg", "png"])
 if uploaded_file:
     image = Image.open(uploaded_file)
-    st.image(image, caption="アップロード画像", use_column_width=True)
+    st.image(image, caption="アップロード画像", use_container_width=True)
 
     with st.spinner("判定中..."):
         prediction = predict_image(model, image)

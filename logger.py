@@ -1,5 +1,7 @@
 import logging
 
+print("logger.pyが読み込まれました")
+
 def get_logger():
     print("===================================================")
     logger = logging.getLogger("cats_or_dogs_logger")
